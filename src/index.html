@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="scss/styles.scss" />
+  <script defer src="js/script.js"></script>
+  <link rel="icon" type="image/png" href="img/logoblack.png" />
+  <title>Redivivus</title>
+</head>
+
+<body>
+  <script>function openForm() {
+      document.getElementById("popup").style.display = "block";
+    }</script>
+  <header>
+    <div class="headerContent">
+      <a href="index.html" class="headerLogo"></a>
+
+      <div class="headernavDesktop">
+        <ul class="headernavDesktopItems header__menu">
+          <li><a href="#">Phénix</a></li>
+          <li>
+            <a href="#collection">Collection</a>
+          </li>
+          <li><a href="#textiles">Textiles</a></li>
+          <li>
+            <a href="#collaboration">Collaborations</a>
+          </li>
+          <li>
+            <a href="#concept">Concept</a>
+          </li>
+        </ul>
+      </div>
+      <div class="header__icons">
+        <div class="header__icon header__icon--shop"></div>
+        <div class="header__icon--user">
+          <button class="openForm__button" onclick="openForm()">
+            <div class="header__icon header__icon--user"></div>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!--Mobile-->
+    <div class="mobile">
+      <h1>Redivivus<span></span></h1>
+      <div>
+        <input id="burger" type="checkbox" />
+
+        <label for="burger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+
+        <nav>
+          <ul>
+            <li><a class="uncheckBurgerMenu" href="#">Phénix</a></li>
+            <li><a class="uncheckBurgerMenu" href="#collection">Collection</a></li>
+            <li><a class="uncheckBurgerMenu" href="#textiles">Textiles</a></li>
+            <li><a class="uncheckBurgerMenu" href="#collaboration">Collaborations</a></li>
+            <li><a class="uncheckBurgerMenu" href="#concept">Concept</a></li>
+            <li><a href="#">user</a></li>
+          </ul>
+      </div>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="background">
+      <div class="background background--1vp">
+        <div class="place">
+          <div class="login" id="popup">
+            <form class="form">
+              <p class="title_form">Me connecter</p>
+              <input class="input" type="email" placeholder="Email *" required />
+              <input class="input" type="password" placeholder="Mot de passe *" required />
+              <p class="forgot"><a href="#">Mot de passe oublié ?</p>
+              <button type="submit">Connecter</button>
+              <p class="message">Pas encore membre ? <a href="pages/register.html"> Créer un compte</a></p>
+              <input type="checkbox" name="Rester connecter" value="connecter">
+              <label for="connecter">Rester connecter</label>
+            </form>
+          </div>
+        </div>
+        <div class="landingPage">
+          <div class="landingPage__phenix">
+            <span>Collection <span>Phénix</span></span>
+          </div>
+          <div class="landingPage__jackets">
+            <div>
+              <a href="pages/hypalon.html"><img src="img/jackets/hypalonvestred.png" alt="veste en Hypalon" />
+                <p>Veste en Hypalon</p>
+              </a>
+            </div>
+            <div>
+              <a href="pages/neoprene.html"><img src="img/jackets/neovestgreen.png" alt="veste en Néoprène" />
+                <p>Veste en Néoprène</p>
+              </a>
+            </div>
+            <div>
+              <a href="pages/similicuir.html"><img src="img/jackets/leathervestblack.png" alt="veste en Simili-Cuir" />
+                <p>Veste en Simili-Cuir</p>
+              </a>
+            </div>
+            <div>
+              <a href="pages/alcantara.html"><img src="img/jackets/alcavestbrown.png" alt="veste en Alcantara" />
+                <p>Veste en Alcantara</p>
+              </a>
+            </div>
+          </div>
+          <div class="landingPage__textiles">
+            <p>
+              Des vestes en textiles <span><span>100%</span> recyclés</span>
+              à partir de bateaux et de voitures de sport.
+            </p>
+          </div>
+          <div class="button button--reverse">
+            <button> <a href="pages/personalisation.html">PERSONALISEZ<span> VOTRE VESTE</span></a></button>
+          </div>
+        </div>
+        <div class="arrow arrow--first"></div>
+        <div class="arrow arrow--second"></div>
+      </div>
+      <div id="collection" class="degrading"></div>
+      <div class="hoverTiles">
+        <div class="hoverTiles__phenix">
+          <div class="hoverTiles__phenixBox">
+            <h3 class="titlephenix dispnoneM">COLLECTION PHENIX</h3>
+          </div>
+          <div class="leftside">
+            <h3 class="titlephenix--h">COLLECTION PHENIX</h3>
+            <div class="textphenix--h">La collection Phénix est composée de deux sortes de vestes. L’une
+              fabriquée à partir de materiaux recupérés sur des bateaux
+              pneumatiques, l’autre à base de materiaux provenant de voitures.
+              Nous recuperons nos materiaux dans les entrepots ou les grandes
+              marques se defont de leurs invendus. Ils sont ensuite traités et
+              retravaillés artisanalement pour avoir un produit éco-consommable
+              de qualité supérieure.
+
+            </div>
+            <div class="button button--remove">
+              <a href="pages/personalisation.html"><button>PERSONALISEZ<span> VOTRE VESTE</span></button></a>
+            </div>
+          </div>
+          <img class="collectionBg dispnoneM" src="img/collection.png" />
+          <div class="jacketsM">
+            <a href="pages/similicuir.html"><img src="img/jackets/leathervestblack.png" /></a>
+            <a href="pages/alcantara.html"><img src="img/jackets/alcavestbrown.png" /></a>
+            <a href="pages/hypalon.html"><img src="img/jackets/hypalonvestred.png" /></a>
+            <a href="pages/neoprene.html"><img src="img/jackets/neovestgreen.png" /></a>
+          </div>
+          <div class="jackets">
+            <a href="pages/similicuir.html"><img src="img/jackets/leathervestblack.png" /></a>
+            <a href="pages/alcantara.html"><img src="img/jackets/alcavestbrown.png" /></a>
+            <a href="pages/hypalon.html"><img src="img/jackets/hypalonvestred.png" /></a>
+            <a href="pages/neoprene.html"><img src="img/jackets/neovestgreen.png" /></a>
+          </div>
+        </div>
+        <div class="hoverTiles__text1" id="textiles">
+          <h3>NOS TEXTILES</h3>
+        </div>
+        <div class="hoverTiles__textiles">
+          <div class="hoverTiles__simi">
+            <div class="hoverTiles__simiBox">
+              <h3 class="titlesimi dispnoneM">SIMILI-CUIR</h3>
+            </div>
+            <div class="leftside">
+
+              <h3 class="titlesimi--h">SIMILI-CUIR</h3>
+              <div class="textsimi--h">
+                Nous vous proposons un simili-cuir
+                résistant, confortable, de grande qualité, retravaillé de manière artisanale.
+              </div>
+              <div class="button button--remove">
+                <a href="pages/personalisation.html"><button>PERSONALISEZ<span> VOTRE VESTE</span></button></a>
+              </div>
+
+            </div>
+            <img class="simiBg" src="img/simili-cuir.png" />
+            <div class="jackets">
+              <a href="pages/similicuir.html"><img src="img/jackets/veste__similicuirbronze.png" /></a>
+              <a href="pages/similicuir.html"><img src="img/jackets/leathervestblack.png" /></a>
+            </div>
+          </div>
+          <div class="hoverTiles__simiM">
+            <div class="leftside">
+              <h3 class="titlesimi--h">SIMILI-CUIR</h3>
+              <div class="textsimi--h">
+                Nous vous proposons un simili-cuir
+                résistant, confortable, de grande qualité, retravaillé de manière artisanale.
+              </div>
+              <div class="button button--remove">
+                <a href="pages/personalisation.html"><button>PERSONALISEZ<span> VOTRE VESTE</span></button></a>
+              </div>
+
+            </div>
+            <div class="jackets">
+              <a href="pages/similicuir.html"><img src="img/jackets/veste__similicuirbronze.png" /></a>
+              <a href="pages/similicuir.html"><img src="img/jackets/leathervestblack.png" /></a>
+            </div>
+          </div>
+          <div class="hoverTiles__alcantara">
+            <div class="hoverTiles__alcantaraBox">
+              <h3 class="titlealcantara dispnoneM">ALCANTARA</h3>
+            </div>
+            <div class="leftside">
+              <h3 class="titlealcantara--h">ALCANTARA</h3>
+              <div class="textalcantara--h">
+                Optez pour une veste agréable au touché,
+                un confort et une qualité égale à celle du cuir pour la moitié du poids.
+              </div>
+              <div class="button button--remove">
+                <a href="pages/personalisation.html"><button>PERSONALISEZ<span> VOTRE VESTE</span></button></a>
+              </div>
+            </div>
+            <img class="alcantaraBg" src="img/alcantara.png" />
+            <div class="jackets">
+              <a href="pages/alcantara.html"><img src="img/jackets/veste__alcantarabeige.png" /></a>
+              <a href="pages/alcantara.html"><img src="img/jackets/alcavestbrown.png" /></a>
+              <a href="pages/alcantara.html"><img src="img/jackets/alcavestdarkbrown.png" /></a>
+            </div>
+          </div>
+          <div class="hoverTiles__alcantaraM">
+            <div class="leftside">
+              <h3 class="titlealcantara--h">ALCANTARA</h3>
+              <div class="textalcantara--h">
+                Optez pour une veste agréable au touché,
+                un confort et une qualité égale à celle du cuir pour la moitié du poids.
+              </div>
+              <div class="button button--remove">
+                <a href="pages/personalisation.html"><button>PERSONALISEZ<span> VOTRE VESTE</span></button></a>
+              </div>
+            </div>
+            <div class="jackets">
+              <a href="pages/alcantara.html"><img src="img/jackets/veste__alcantarabeige.png" /></a>
+              <a href="pages/alcantara.html"><img src="img/jackets/alcavestbrown.png" /></a>
+              <a href="pages/alcantara.html"><img src="img/jackets/alcavestdarkbrown.png" /></a>
+            </div>
+          </div>
+          <div class="hoverTiles__neoprene">
+            <div class="hoverTiles__neopreneBox">
+              <h3 class="titleneoprene dispnoneM">NEOPRENE</h3>
+            </div>
+            <div class="leftside">
+              <h3 class="titleneoprene--h">NEOPRENE</h3>
+              <div class="textneoprene--h">
+                Utlisable dans tout type d’environnement,
+                soyez à l’aise et à la mode avec le textile néoprène.
+              </div>
+              <div class="button button--remove">
+                <a href="pages/personalisation.html"><button>PERSONALISEZ<span> VOTRE VESTE</span></button></a>
+              </div>
+            </div>
+            <img class="neopreneBg" src="img/neoprene.png" />
+            <div class="jackets">
+              <a href="pages/neoprene.html"><img src="img/jackets/neovestred.png" /></a>
+              <a href="pages/neoprene.html"><img src="img/jackets/neovestgreen.png" /></a>
+              <a href="pages/neoprene.html"><img src="img/jackets/neovestblack.png" /></a>
+            </div>
+          </div>
+          <div class="hoverTiles__neopreneM">
+            <div class="leftside">
+              <h3 class="titleneoprene--h">NEOPRENE</h3>
+              <div class="textneoprene--h">
+                Utlisable dans tout type d’environnement,
+                soyez à l’aise et à la mode avec le textile néoprène.
+              </div>
+              <div class="button button--remove">
+                <a href="pages/personalisation.html"><button>PERSONALISEZ<span> VOTRE VESTE</span></button></a>
+              </div>
+            </div>
+            <div class="jackets">
+              <a href="pages/neoprene.html"><img src="img/jackets/neovestred.png" /></a>
+              <a href="pages/neoprene.html"><img src="img/jackets/neovestgreen.png" /></a>
+              <a href="pages/neoprene.html"><img src="img/jackets/neovestblack.png" /></a>
+            </div>
+          </div>
+          <div class="hoverTiles__hypalon">
+            <div class="hoverTiles__hypalonBox">
+              <h3 class="titlehypalon dispnoneM">HYPALON</h3>
+            </div>
+            <div class="leftside">
+              <h3 class="titlehypalon--h">HYPALON</h3>
+              <div class="texthypalon--h">
+                Textile résistant aux itempéries, aux acides et à la chaleur.
+                Tout en gardant de l’esthétisme et de la qualité.
+              </div>
+              <div class="button button--remove">
+                <a href="pages/personalisation.html"><button>PERSONALISEZ<span> VOTRE VESTE</span></button></a>
+              </div>
+            </div>
+            <img class="hypalonBg" src="img/hypalon.png" />
+            <div class="jackets">
+              <a href="pages/hypalon.html"><img src="img/jackets/vestenoir.png" /></a>
+              <a href="pages/hypalon.html"><img src="img/jackets/hypalonvestred.png" /></a>
+            </div>
+          </div>
+          <div class="hoverTiles__hypalonM">
+            <div class="leftside">
+              <h3 class="titlehypalon--h">HYPALON</h3>
+              <div class="texthypalon--h">
+                Textile résistant aux itempéries, aux acides et à la chaleur.
+                Tout en gardant de l’esthétisme et de la qualité.
+              </div>
+              <div class="button button--remove">
+                <a href="pages/personalisation.html"><button>PERSONALISEZ<span> VOTRE VESTE</span></button></a>
+              </div>
+            </div>
+            <div class="jackets">
+              <a href="pages/hypalon.html"><img src="img/jackets/vestenoir.png" /></a>
+              <a href="pages/hypalon.html"><img src="img/jackets/hypalonvestred.png" /></a>
+            </div>
+          </div>
+        </div>
+        <div class="hoverTiles__text1" id="collaboration">
+          <h3>NOS COLLABORATIONS</h3>
+        </div>
+        <div class="hoverTiles__lambo">
+          <div class="collab"> <img class="logoyellow" src="img/logoyellow.png" alt="">
+            <img class="vsyellow" src="img/vsyellow.png" alt="">
+            <img class="lambologo" src="img/lambologo.png" alt="">
+          </div>
+          <img class="lamboimg" src="img/lambo.png" alt="">
+          <div class="blabla">
+            <h3 class="titleconcept--h">Redivivus collabore avec Lamborghini</h3>
+            <h3 class="titleconcept--h2">du 01/02 au 01/03</h3>
+            <h3 class="titleconcept--h3">Disponible en magasin</h3>
+            <h3 class="titleconcept--h4">27 rue de Rivoli, Paris 75004, Île-de-France</h3>
+            <h3 class="titleconcept--h5">Dans la limite des stocks disponibles</h3>
+          </div>
+        </div>
+        <div class="hoverTiles__zod">
+          <div class="collab"> <img class="logozod" src="img/logobleu.png" alt="">
+            <img class="vszod" src="img/vsblue.png" alt="">
+            <img class="zodlogo" src="img/logozod.png" alt="">
+          </div>
+          <img class="zodimg" src="img/zodiac.png" alt="">
+          <div class="blabla">
+            <h3 class="titleconcept--h">Redivivus collabore Prochainement avec zodiac</h3>
+            <h3 class="titleconcept--h2">du 01/03 au 03/03</h3>
+            <h3 class="titleconcept--h3"> Bientôt Disponible en magasin</h3>
+            <h3 class="titleconcept--h4">27 rue de Rivoli, Paris 75004, Île-de-France</h3>
+            <h3 class="titleconcept--h5">Dans la limite des stocks disponibles</h3>
+          </div>
+        </div>
+        <div class="hoverTiles__text1">
+          <h3>NOTRE CONCEPT</h3>
+        </div>
+        <div class="hoverTiles__textiles">
+          <div class="hoverTiles__concept">
+            <div class="hoverTiles__conceptBox">
+              <h3 class="titleconcept dispnoneM">REDIVIVUS</h3>
+            </div>
+            <div class="leftside">
+
+              <h3 class="titleconcept--h">CONCEPT</h3>
+              <div class="textconcept--h">
+                <span>Les textiles pour fabriquer votre veste viennent des entrepôts où les grandes entreprises stockent
+                  leurs
+                  invendus.</span>
+                <span>Nous les traitons de manière éco-responsable grâce à des installations dans nos semi-remorques
+                  éléctriques.</span>
+                <span>La veste que vous avez personalisé est ensuite manufacturée dans nos ateliers avec le textile de
+                  votre
+                  choix.</span>
+                <span>Nous nous occupons de faire en sorte que votre veste éco-consommable atteigne la fin de son
+                  parcours
+                  jusqu’à chez vous.</span>
+              </div>
+            </div>
+            <img class="conceptBg" src="img/conceptdepth.png" />
+            <div class="jackets">
+              <a href="pages/similicuir.html"><img src="img/by redi.png" no-repeat center; /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <div id="footerJS"></div>
+</body>
+
+</html>

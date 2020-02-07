@@ -1,0 +1,153 @@
+.place {
+  margin-top: 10vh;
+  display: flex;
+  background-color: #eeeeee;
+  width: 100%;
+}
+.register__button--subscribe {
+  margin-bottom: 38%;
+}
+
+.register {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.register__log {
+  display: flex;
+  flex-direction: column;
+  .register__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  span:nth-child(1) {
+    font-size: 35px;
+    line-height: 40px;
+  }
+  span {
+    font-weight: bold;
+    line-height: 25px;
+  }
+  ul li {
+    line-height: 30px;
+  }
+  .title_form {
+    padding: 20px;
+  }
+}
+
+.input {
+  width: 60%;
+}
+.register__reg {
+  display: flex;
+  width: 100%;
+  right: 10px;
+  justify-content: flex-end;
+  .register__form2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.register__title {
+  font-size: 24px;
+  margin: auto;
+  text-align: center;
+  padding: 20px;
+  font-weight: bold;
+}
+
+.register__input2 {
+  display: flex;
+  background-color: #ffffff;
+  width: 700px;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+}
+
+.register__button {
+  text-transform: uppercase;
+  background-color: #000000;
+  width: 400px;
+  border: 0;
+  padding: 15px;
+}
+
+.register button a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.register__accept {
+  width: 700px;
+  font-size: 12px;
+}
+
+@media (max-width: 1300px) {
+  .place {
+    display: block;
+  }
+  .register__reg {
+    justify-content: center;
+  }
+  .register__input2 {
+    width: 600px;
+  }
+  .register__accept {
+    width: 600px;
+  }
+  .register__button {
+    width: 300px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .place {
+    display: block;
+  }
+  .register {
+    flex-direction: column;
+  }
+  .register__reg {
+    width: 100%;
+  }
+  .register__input2 {
+    width: 500px;
+  }
+  .register__accept {
+    width: 500px;
+  }
+  .register__button {
+    width: 300px;
+  }
+}
+
+@media (max-width: 720px) {
+  .place {
+    display: block;
+  }
+  .register {
+    flex-direction: column;
+  }
+  .register__reg {
+    justify-content: center;
+  }
+  .register__input2 {
+    width: 300px;
+  }
+  .register__accept {
+    width: 300px;
+  }
+  .register__button {
+    width: 150px;
+  }
+}

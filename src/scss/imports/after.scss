@@ -1,0 +1,204 @@
+.backgroundAfter {
+  background-image: url(../img/bgpersodesktop.png);
+  background-size: cover;
+  margin-top: 10vh;
+  width: 100%;
+  height: 90vh;
+  background-size: cover;
+}
+.choiceContent {
+  .mainContent__divider {
+    @media (min-width: 1000px) {
+      height: 70vh;
+    }
+  }
+  @media (min-width: 1000px) {
+    display: flex;
+    justify-content: space-around;
+    padding: 10vh 10vw 0 10vw;
+  }
+}
+.choiceContent__jacket {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  p {
+    color: white;
+    font-family: "Raleway", "sans-serif";
+    font-weight: bold;
+    font-size: 17px;
+    margin-top: 20px;
+  }
+  img {
+    width: 170px;
+  }
+  @media (min-width: 500px) {
+    p {
+      font-size: 20px;
+    }
+    img {
+      width: 200px;
+    }
+  }
+  @media (min-width: 1000px) {
+    p {
+      font-size: 30px;
+    }
+    img {
+      width: 300px;
+    }
+  }
+}
+.choiceContent__jackets {
+  margin-top: 20px;
+  width: 60%;
+  display: none;
+  &.is-visible {
+    display: inline;
+  }
+  @media (min-width: 1000px) {
+    margin-top: 100px;
+  }
+}
+
+.choiceContent__choose {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  p {
+    font-family: "Raleway", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    letter-spacing: 0.2rem;
+    width: fit-content;
+  }
+  @media (min-width: 1000px) {
+    p {
+      font-size: 30px;
+    }
+  }
+}
+.choiceContent__sizeHolder {
+  .choiceContent__sizes {
+    display: flex;
+    justify-content: space-around;
+    width: 70vw;
+    margin-top: 50px;
+    @media (min-width: 1000px) {
+      width: 40vw;
+      margin-top: 50px;
+    }
+    .choiceContent__size {
+      margin: 0;
+    }
+  }
+}
+.choiceContent__size:hover {
+  border-radius: 50%;
+  background-color: white;
+  color: black;
+  cursor: pointer;
+}
+.choiceContent__color {
+  p {
+    margin-top: 50px;
+  }
+}
+.choiceContent__colors {
+  display: flex;
+  width: 70vw;
+  justify-content: space-around;
+  margin-top: 50px;
+  @media (min-width: 1000px) {
+    width: 40vw;
+  }
+}
+.choiceContent__buy {
+  display: flex;
+  background-color: black;
+  padding: 20px 100px;
+  width: fit-content;
+  margin-top: 50px;
+  p {
+    font-size: 30px;
+    margin: 0;
+  }
+
+  @media (min-width: 1000px) {
+    margin-top: 15vh;
+  }
+}
+.choiceContent__buy:hover {
+  background-color: white;
+  p {
+    color: black;
+  }
+}
+.choiceContent__color--green {
+  position: relative;
+}
+.choiceContent__color--red {
+  position: relative;
+}
+.choiceContent__color--brown {
+  position: relative;
+}
+.choiceContent__color--black {
+  position: relative;
+}
+.choiceContent__color--beige {
+  position: relative;
+}
+.choiceContent__color--darkbrown {
+  position: relative;
+}
+
+.svg {
+  width: 40px;
+  height: 40px;
+  z-index: 10;
+  position: absolute;
+  display: none;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+.choiceContent__color--green:hover {
+  .svg {
+    display: block;
+  }
+}
+
+.choiceContent__color--red:hover {
+  .svg {
+    display: block;
+  }
+}
+
+.choiceContent__color--brown:hover {
+  .svg {
+    display: block;
+  }
+}
+
+.choiceContent__color--black:hover {
+  .svg {
+    display: block;
+  }
+}
+
+.choiceContent__color--beige:hover {
+  .svg {
+    display: block;
+  }
+}
+
+.choiceContent__color--darkbrown:hover {
+  .svg {
+    display: block;
+  }
+}

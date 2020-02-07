@@ -1,0 +1,137 @@
+.backgroundPerso {
+  background-image: url("../img/bgpersodesktop.png");
+  background-repeat: no-repeat;
+  margin-top: 10vh;
+  width: 100%;
+  background-size: cover;
+  z-index: -1;
+  @media (min-width: 1000px) {
+    height: 90vh;
+  }
+}
+
+.mainContent {
+  width: 80vw;
+  margin: 0 auto;
+}
+.mainContent__text {
+  padding-top: 50px;
+  line-height: 40px;
+  p {
+    font-size: 20px;
+    color: white;
+  }
+  b {
+    font-size: 20px;
+  }
+}
+
+.mainContent__choices {
+  margin-top: 30px;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  @media (min-width: 1000px) {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 70px;
+  }
+  h3 {
+    display: none;
+  }
+  h2,
+  h3 {
+    color: white;
+    font-size: 24px;
+    font-weight: bolder;
+    margin-bottom: 20px;
+    @media (min-width: 1000px) {
+      font-size: 40px;
+    }
+  }
+}
+
+.mainContent__boat,
+.mainContent__car {
+  margin: 20px 0;
+  @media (min-width: 1000px) {
+    margin: 0;
+    width: 48%;
+  }
+  &:hover {
+    .mainContent__infos {
+      transform: translateY(0);
+    }
+  }
+  .mainContent__picture {
+    width: 100%;
+    height: 150px;
+    position: relative;
+    overflow: hidden;
+    @media (min-width: 600px) {
+      height: 250px;
+    }
+    @media (min-width: 1000px) {
+      height: 321px;
+    }
+  }
+}
+
+.mainContent__boat .mainContent__picture {
+  background: url(../img/choiceboat.png) no-repeat center;
+  background-size: cover;
+}
+
+.mainContent__car .mainContent__picture {
+  background: url(../img/choicecar.png) no-repeat center;
+  background-size: cover;
+}
+
+.mainContent__boat:hover,
+.mainContent__car:hover {
+  h3 {
+    display: block;
+  }
+  h2 {
+    display: none;
+  }
+}
+
+.mainContent__infos {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  transform: translateY(-100%);
+  transition: transform 0.4s;
+
+  a {
+    height: 75%;
+    @media (min-width: 1000px) {
+      height: inherit;
+    }
+    img {
+      height: 100%;
+      @media (min-width: 1000px) {
+        height: inherit;
+      }
+    }
+  }
+}
+
+.mainContent__divider {
+  width: 2px;
+  height: 100%;
+  background-color: #fff;
+}
+
+.mainContent__infos img:hover {
+  transform: rotateY(180deg);
+  transform: scale(1.3);
+  transition: transform 0.5s;
+}

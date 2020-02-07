@@ -1,0 +1,129 @@
+@keyframes stroke {
+  0% {
+    background-size: 0 3px;
+  }
+  100% {
+    background-size: 100% 3px;
+  }
+}
+
+.header__menu li:hover {
+  background-repeat: no-repeat;
+  background-image: linear-gradient(to bottom, #eeeeee 100%, #eeeeee 100%);
+  background-size: 100% 3px, 3px 100%, 100% 3px, 3px 100%;
+  animation: stroke 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.headernavDesktopItems {
+  display: flex;
+  justify-content: center;
+}
+.headernavDesktopItems li {
+  padding: 10px 23px 36px 23px;
+  text-transform: uppercase;
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+}
+.headernavDesktopItems li:after {
+  content: "";
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  position: absolute;
+  background-color: #eeeeee;
+  transform: translateY(100%);
+  transition: transform 0.5s;
+  z-index: -1;
+}
+.headernavDesktopItems li a {
+  transition: color 0.5s;
+}
+.headernavDesktopItems li:hover a {
+  color: black;
+}
+.headernavDesktopItems li:hover:after {
+  transform: translateY(0);
+}
+
+header {
+  position: fixed;
+  z-index: 415;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 100vw;
+  left: 0;
+  font-weight: normal;
+  font-size: 18px;
+  height: 10vh;
+  background-color: #1e2022;
+}
+
+.header__menu {
+  margin-top: 3.5vh;
+  width: 55vw;
+  display: flex;
+  justify-content: space-around;
+  li {
+    a {
+      text-decoration: none;
+      color: #eeeeee;
+    }
+  }
+}
+
+.header__icons {
+  display: flex;
+  justify-content: space-between;
+  width: 6vw;
+  margin-right: 5vw;
+  margin-top: 3.5vh;
+}
+
+.headerContent {
+  display: flex;
+  justify-content: space-between;
+  height: 10vh;
+  overflow: hidden;
+}
+
+.logoDesktop {
+  margin-left: 3.5vw;
+  margin-top: 2.5vh;
+}
+
+.bg-transparent {
+  background: transparent;
+}
+
+.headerLogo {
+  background-repeat: no-repeat;
+  width: 49px;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 40px;
+  margin-right: 40px;
+  height: 49px;
+  background-image: url("../img/logoredivivus__desktop.png");
+}
+
+.openForm__button {
+  background-color: transparent;
+  border: none;
+}
+
+.header__icon {
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 2vw;
+  height: 2vw;
+}
+
+.header__icon--shop {
+  background-image: url("../img/shop.png");
+}
+.header__icon--user {
+  background-image: url("../img/user.png");
+}
